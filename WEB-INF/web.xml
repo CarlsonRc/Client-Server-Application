@@ -1,0 +1,30 @@
+<web-app>
+
+  <display-name>
+    Project 4 Enterprise Systems
+  </display-name>
+  <description>
+    this is the web application in which we will demonstrate our first three tiered application.
+  </description>
+
+  <servlet>
+    <servlet-name>alpha</servlet-name>
+    <servlet-class>RootUserApp</servlet-class><!-- servlet-class will lead tomcat to the .class java file we need -->
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>alpha</servlet-name>
+    <url-pattern>/rootUserApp</url-pattern><!-- url pattern must match action in coresponding html -->
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>beta</servlet-name>
+    <servlet-class>ClientUserApp</servlet-class><!-- servlet-class will lead tomcat to the .class java file we need -->
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>beta</servlet-name>
+    <url-pattern>/clientUserApp</url-pattern><!-- url pattern must match action in coresponding html -->
+  </servlet-mapping>
+
+</web-app>
